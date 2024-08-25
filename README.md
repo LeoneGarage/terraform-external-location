@@ -15,7 +15,7 @@ This repo contains terraform templates and scripts creating External Storage Loc
 
 Be careful with token as secrets in Terraform are stored in plain text. This is why *secrets.tfvars* file is in .gitignore
 
-5. Once you have created *secrets.tfvars* file, run *configure.sh* script and pass to it *-w <your workspace name>* parameter. So for example, if you want to create a Databricks Workspace called **demo**, you would run *./configure.sh -w demo* on command line.
+5. Once you have created *secrets.tfvars* file, run *configure.sh* script and pass to it *-w <your workspace name>* parameter. So for example, if you want to store state in a Terraform Workspace called **demo**, you would run *./configure.sh -w demo* on command line.
 6. The script will apply the template in *workspace* subdirectory.
 
 ### Variables
